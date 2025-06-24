@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Todas as demais mídias */
+
+/* Typical Device breakpoints valores atuais de 11/06/2025
+-------------------------------
+    Celular: de 576px até 768px
+
+    Tablet: de 768px até 992px
+
+    Desktop: de 992px até 1200px
+
+    TV: de 1200px e acima
+-------------------------------
+*/
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: linear-gradient( to top,#49a09d,#5f2c82);
+    }
+
+    section#login{
+        width: 80vw
+    }
+
+    section#login > div#imagen{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+   
+
+    section#login > div#formulario{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:992px) {
+
+    body{
+        background-image: linear-gradient(to top,#49a09d,#5f2c82 );
+    }
+
+    section#login{
+         width: 990px;
+    }
+
+    section#login > div#imagen{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#login > div#formulario{
+        float: left;
+        width: 50%;
+    }
+}
