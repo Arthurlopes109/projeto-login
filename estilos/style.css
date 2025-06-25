@@ -36,17 +36,28 @@ section#login{
     width: 250px;
     height: 576px;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
 }
 
-#login > #imagen{
+section#login > div#imagen{
     display: block;
     background: #5f2c82 url(../imagens/login.jpg) no-repeat;
     background-size: cover;
     height: 200px;
 }
-#formulario{
+section#login > div#formulario{
     display: block;
     padding: 10px;
-    margin: 10px;
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p{
+    font-size: 0.9em;
 }
