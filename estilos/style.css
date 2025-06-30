@@ -34,11 +34,11 @@ section#login{
     overflow: hidden; /*tudo que estiver fora da borda vai ficar escondido(isso serviu para esconder as bordas que não ficaram redondas por causa da img)*/
     background-color: white;
     width: 250px;
-    height: 576px;
+    height: 550px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
 
-    transition: width .2s, height .2s;
+    transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
 
@@ -59,5 +59,58 @@ div#formulario > h1{
 }
 
 div#formulario > p{
+    font-size: 0.9em;
+}
+
+form > div.campo{
+    background-color:#5f2c82;
+    display: block;
+    margin: 5px 0px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+div.campo > label{
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color:#5cbebb;
+    color: white;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #3d8684;
+}
+
+form > a.botao {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #49a09d;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #418f8c;
+    padding: 7px;
+}
+
+form > a.botao:hover{
+    background-color: #5cbebb;
+}
+
+form > a.botao > span{
     font-size: 0.9em;
 }
